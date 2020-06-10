@@ -50,11 +50,11 @@ body{
 }
 
 .dropdown{
-	float:center;
-	overflow:hidden;
+	position:relative;
+	display:inline-block;
 }
 
-.dropdown .drop{
+.drop{
 	font-size: 16px;
 	border: none;
 	outline: none;
@@ -64,27 +64,35 @@ body{
 	font-family: inherit; /* vertikalna poravnava */
 	margin: 0;
 }
-
+.meni a:hover, dropdown:hover .drop{
+	background-color:rgb(250,239,222);
+}
 .vsebina{
 	display: none;
 	position: absolute;
-	background-color: #f9f9f9;
+	background-color: rgb(250,239,222);
 	min-width: 160px;
-	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	box-shadow: rgb(250,239,222);
 	z-index: 1;
 }
 
 .vsebina a{
-	float: none;
 	color: black;
 	padding: 12px 16px;
 	text-decoration: none;
 	display: block;
-	text-align: left;
 }
-
+.vsebina a hover{
+	background-color:rgb(250,239,222);
+}
+.dropdown:hover .vsebina{
+	display:block;
+}
 a:hover{
 	color:black;
+}
+.dropdown:hover .drop{
+	background-color:rgb(240,200,170);
 }
 
 .razvoj{
