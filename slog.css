@@ -1,0 +1,166 @@
+/* velikost in oblika pisave besedila */
+body{
+	font-family:Alegria;
+	font-size:20px;
+}
+
+/* glava strani */
+.glava{
+	width:100%;
+	background-color:rgb(250,239,222);
+}
+
+/* posavitev logo */
+.logo{
+	height:200px;
+	width:30%;
+	float:left;
+	text-align:center;
+	margin-left:auto;
+	margin-right:auto;
+	padding:20px 0;
+}
+
+/* postavitev naslova */
+.glavni{
+	height:200px; 
+	width:40%;
+	float:center;
+	text-align:center;
+	margin:auto;
+	padding: 20px 0;
+}
+
+
+.zamik{
+	width:30%;
+	float:right;
+}
+
+/* postavitev podnaslova */
+.naslov{
+	width:100%;
+	height:35px;
+	text-align:center;
+	background-color:rgb(240,200,170);
+	float:right;
+	padding-top:0px;
+	padding-bottom:20px;
+	margin-left:auto;
+	margin-right:auto;
+	font-size:17px;
+	overflow:show;
+}
+
+/* telo */
+.row{
+	width:100%;
+	min-height:200px;
+	overflow:hidden;
+}
+
+/* postavitev menija */
+.meni{
+	width:100%;
+	height:40px;
+	text-align:center;
+	background-color:rgb(235,183,148);
+	margin-left:auto;
+	margin-right:auto;
+	padding: 8px 10px;
+	font-size: 17px;
+}
+
+/* povezave v meniju */
+.meni a{
+	float:center;
+	font-size: 16px;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+/* priprava spustnega menija */
+.dropdown{
+	position:relative;
+	display: inline-block;
+}
+
+.drop{
+	font-size: 16px;
+	border: none;
+	color: white;
+	padding: 16px;
+	background-color: inherit;
+	font-family: inherit;
+}
+
+.vsebina{
+	position:absolute;
+	display: none;
+	min-width: 160px;
+	z-index: 1;
+	top:50px;
+}
+
+.vsebina a{
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	background-color:rgb(250,239,222);
+}
+.vsebina a:hover{
+	background-color:rgb(235,183,148);
+}
+.dropdown:hover .vsebina{
+	display:block;
+}
+
+
+a:hover{
+	color:black;
+}
+
+/* razdelek na prvi strani za vodoravno sliko */
+.razvoj{
+	height:75px; 
+	width:100%; 
+	background-color:rgb(250,239,222);
+	text-align:center;
+	padding: 10px 0px;
+}
+
+/* besedilo */
+.besedilo{
+	width:60%;
+	float:left;
+}
+
+/* postavitev slik zraven besedila */
+.slike{
+	float:right;
+	text-align:center;
+	width:40%;
+	min-height:400px;
+}
+
+/* podatki v nogi */
+.podatki{
+	width:20%;
+	min-height:192px;
+	overflow:hidden;
+	font-size:13px;
+	float:left;
+	background-color:rgb(235,183,148);
+}
+
+/* viri */
+.viri{
+	width:80%;
+	min-height:150px;
+	font-size:13px;
+	float:right;
+	background-color:rgb(235,183,148);
+}
